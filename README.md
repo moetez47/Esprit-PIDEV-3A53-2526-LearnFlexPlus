@@ -1,51 +1,148 @@
-🎓 LearnFlex+
+🎓 LearnFlex Plus
+LearnFlex Plus est une plateforme e-learning intelligente conçue pour accompagner les élèves dans leur apprentissage, leur évaluation, leur orientation académique et leur interaction avec les enseignants.
+L'application centralise plusieurs fonctionnalités pédagogiques dans un seul espace moderne et intuitif :
+📚 gestion des cours,
+📝 examens et quiz,
+🎯 orientation académique,
+💬 forum éducatif,
+🎥 communication en direct ou enregistrée avec les professeurs.
 
-LearnFlex+ est une plateforme éducative intelligente dédiée à l’apprentissage en ligne, offrant une expérience flexible, personnalisée et interactive, principalement destinée aux élèves préparant le baccalauréat.
+📌 Objectif du projet
+L'objectif principal de LearnFlex Plus est de proposer une solution numérique flexible permettant aux élèves de :
 
-La plateforme centralise les cours, leçons, ressources pédagogiques, quiz, examens ainsi que le suivi détaillé de la progression des apprenants, dans une application moderne, ergonomique et accessible.
+suivre leurs cours en ligne,
+accéder à des leçons structurées,
+passer des quiz et examens,
+consulter leurs résultats,
+bénéficier d'une orientation personnalisée,
+échanger avec leurs enseignants,
+participer à une communauté éducative active.
 
-🌟 Objectifs du projet
 
-Faciliter l’accès à un contenu éducatif structuré et de qualité
+🚀 Fonctionnalités principales
+👤 1. Gestion des utilisateurs
 
-Offrir un apprentissage adapté au niveau de chaque apprenant
+Inscription / connexion
+Gestion des rôles :
 
-Améliorer le suivi pédagogique grâce à des indicateurs de performance
+Étudiant
+Enseignant
+Administrateur
 
-Centraliser tous les outils d’apprentissage dans une seule plateforme
 
-🚀 Fonctionnalités principales 👤 Gestion des utilisateurs
+Gestion du profil utilisateur
 
-Inscription et authentification sécurisées
+📚 2. Gestion des cours
 
-Gestion des rôles : Élève, Enseignant, Administrateur
+Création de cours
+Organisation des leçons
+Ajout de contenu pédagogique
+Classement par niveau / catégorie
 
-📚 Gestion pédagogique
+📝 3. Gestion des examens
 
-Organisation par matières, cours et leçons
+Création d'examens
+Définition de la durée et de la date
+Évaluation des performances
+Système de review / feedback
 
-Ajout de ressources pédagogiques (PDF, vidéos, liens externes)
+❓ 4. Gestion des quiz
 
-📝 Quiz & examens
+Création de quiz interactifs
+Ajout de questions et réponses
+Correction automatique
+Attribution de score
 
-Quiz interactifs par chapitre
+🎯 5. Gestion de l'orientation
 
-Examens avec système de participation
+Attribution de scores d'orientation
+Organisation d'événements éducatifs
+Aide à la prise de décision académique
 
-Questions à choix multiples (QCM)
+💬 6. Gestion du forum
 
-📊 Suivi & évaluation
+Publications éducatives
+Partage d'informations
+Interaction entre utilisateurs
 
-Consultation des résultats
+🎥 7. Communication enseignant - élève
 
-Suivi de la progression individuelle
+Sessions live
+Vidéos record
+Accès à des contenus d'accompagnement
+Suivi pédagogique plus humain et interactif
 
-Statistiques de performance et d’évolution
 
-🎯 Apprentissage personnalisé
+🧱 Architecture fonctionnelle
+Le projet est organisé en plusieurs modules :
 
-Adaptation du contenu selon le niveau de l’apprenant
+Gestion Utilisateur
+Gestion Cours
+Gestion Examen
+Gestion Quiz
+Gestion Orientation
+Gestion Forum
+Gestion Communication
 
-Suivi individualisé et recommandations pédagogiques
+Cette séparation facilite :
 
-🛠️ Technologies utilisées Couche Technologies Backend Symfony 6.4 Frontend Twig, HTML, CSS, JavaScript Base de données MySQL / Oracle ORM Doctrine Gestion de versions Git & GitHub
+la maintenance,
+l'évolutivité,
+l'organisation du code,
+la répartition du travail en équipe.
+
+
+🗂️ Modèle conceptuel (Entités principales)
+👤 User
+Représente les utilisateurs de la plateforme :
+
+étudiant
+enseignant
+administrateur
+
+📚 Cours / Leçon
+Permet de structurer le contenu pédagogique.
+📝 Examen / Review
+Permet d'évaluer les élèves et de leur fournir un retour.
+❓ Quiz / Question / Réponse
+Permet l'apprentissage interactif et l'auto-évaluation.
+🎯 Score / Événement
+Permet de soutenir l'orientation scolaire et académique.
+💬 Publication
+Permet aux utilisateurs de partager du contenu dans le forum.
+🎥 Communication
+Permet d'organiser :
+
+des lives,
+des vidéos enregistrées,
+des échanges pédagogiques.
+
+
+🛠️ Technologies utilisées
+Application web
+
+Symfony (PHP)
+
+Application desktop
+
+JavaFX (Java)
+
+Base de données
+
+MySQL
+
+Outils de développement
+
+Git & GitHub
+VS Code / IntelliJ / PhpStorm
+
+
+🧩 Structure du projet
+LearnFlexPlus/
+│
+├── symfony/                # Application web (PHP / Symfony)
+├── javafx/                 # Application desktop (Java / JavaFX)
+├── database/               # Scripts SQL / schéma BD
+├── assets/                 # Images, icônes, fichiers statiques
+├── docs/                   # Documentation technique / UML
+└── README.md               # Documentation principale
